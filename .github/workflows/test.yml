@@ -34,7 +34,7 @@ jobs:
   # deploy web app
   - uses: azure/webapps-deploy@v1
     with:
-     app-name: vivekbottle1
+     app-name: vivekflask1
      package: Application
   # Azure logout
   - name: logout
