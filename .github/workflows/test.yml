@@ -29,12 +29,12 @@ jobs:
      creds: ${{ secrets.AZURE_CREDENTIALS }}
   - uses: azure/appservice-settings@v1
     with:
-     app-name: vivekflask1
+     app-name: appflask1
      general-settings-json: '{"linuxFxVersion": "PYTHON|3.7"}' #'General configuration settings as Key Value pairs'
   # deploy web app
   - uses: azure/webapps-deploy@v1
     with:
-     app-name: vivekflask1
+     app-name: appflask1
      package: Application
   # Azure logout
   - name: logout
